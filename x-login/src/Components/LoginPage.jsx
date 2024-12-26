@@ -8,9 +8,6 @@ const Login = () => {
     const [welcome, setWelcome] = useState(false)
 
 
-
-
-
     const handleClick = (e)=>{
         e.preventDefault();
         if(username=="user" && password=="password"){
@@ -25,12 +22,11 @@ const Login = () => {
 
     return(
        <div>
-        {/* style={{display:"flex", flexDirection:"column"}} */}
        
-        
+     
         <h1>Login page</h1>
         {welcome ? massage : 
-                        <div style={{display:'flex', flexDirection:'column'}}>
+                        <div>
                             {massage}
                             <form onSubmit={handleClick}>
                                         <div>
@@ -66,3 +62,4 @@ const Login = () => {
 
 }
 export default Login;
+
