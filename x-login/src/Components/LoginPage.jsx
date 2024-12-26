@@ -30,7 +30,7 @@ const Login = () => {
                             {massage}
                             <form onSubmit={handleClick}>
                                         <div>
-                                        <label htmlFor="username">Username:</label>
+                                        <label htmlFor="username">Username</label><span>:</span>
                                         <input
                                             type="text"
                                             id="username"
@@ -40,7 +40,7 @@ const Login = () => {
                                         />
                                         </div>
                                         <div>
-                                        <label htmlFor="password">Password:</label>
+                                        <label htmlFor="password">Password</label><span>:</span>
                                         <input
                                             type="password"
                                             id="password"
